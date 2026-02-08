@@ -1,0 +1,40 @@
+/* LeavedStudents.css */
+
+.leaved-students-content {
+  background-color: #f7e0e0;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  padding: 7px;
+  max-width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* allow horizontal scroll if needed */
+}
+
+.leaved-students-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* now 9 columns for 9 fields */
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.leaved-students-row.header {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.leaved-students-cell {
+  word-break: break-word; /* break long text */
+  white-space: normal;    /* allow wrapping */
+  padding: 5px;
+  overflow-wrap: anywhere; /* wrap even long words/numbers */
+}
+
+/* Optional: smaller font for very long content to fit */
+.leaved-students-cell {
+  font-size: 13px;
+  line-height: 1.2;
+}

@@ -1,0 +1,92 @@
+/* src/pages/sections/NewEmployee.css */
+
+.new-employee-content {
+  background-color: #f7e0e0;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  padding: 20px;
+  max-width: 800px;   /* reduced overall form width */
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-employee-content-row {
+  display: grid;
+  grid-template-columns: 200px auto;  /* label fixed, input flexible */
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.new-employee-content-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.new-employee-content-input {
+  width: 250px;        /* 🔥 slightly smaller than before */
+  max-width: 100%;
+  padding: 7px 12px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.new-employee-content-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.save-button,
+.clear-button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+/* Modal CSS for all components */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}

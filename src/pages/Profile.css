@@ -1,0 +1,146 @@
+.profile-container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background-color: #f5f8fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+.profile-container h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+.profile-container p.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.avatar-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3751ff 0%, #9340ff 100%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 10px;
+  user-select: none;
+  box-shadow: 0 2px 10px rgb(55 81 255 / 0.3);
+}
+.profile-name {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+.profile-custid {
+  font-size: 13.5px;
+  color: #888;
+  margin: 6px 0 14px 0;
+}
+button.change-avatar {
+  background-color: #eff2ff;
+  border: 1px solid #b3bcf5;
+  border-radius: 5px;
+  padding: 6px 16px;
+  font-weight: 600;
+  color: #3751ff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button.change-avatar:hover {
+  background-color: #d8dffe;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+}
+.form-grid .full-span {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #4e4e56;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  border: 1.7px solid #d1d1de;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #323232;
+  background-color: white;
+  transition: border-color 0.2s ease;
+  resize: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3751ff;
+  box-shadow: 0 0 5px rgb(55 81 255 / 0.35);
+}
+
+.buttons-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+button.save-changes {
+  background-color: #3751ff;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button.save-changes:hover {
+  background-color: #273cba;
+}
+button.cancel-changes {
+  background-color: #f4f5f7;
+  border: 1px solid #b9b9b9;
+  color: #4a4a68;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button.cancel-changes:hover {
+  background-color: #d0d1dd;
+}
+
+h3.emergency-title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #323232;
+}

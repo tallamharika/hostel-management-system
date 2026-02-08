@@ -1,0 +1,50 @@
+/* Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.6); /* transparent effect */
+}
+
+/* Outer form card (applies transparency to the whole box) */
+.form-container {
+  background: rgba(255, 255, 255, 0.8); /* white but see-through */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+/* Inner form (transparent, no background) */
+.auth-form {
+  background: none !important; 
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Inputs */
+.auth-form input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Button */
+.auth-form button {
+  background: orange;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.auth-form button:hover {
+  background: darkorange;
+}

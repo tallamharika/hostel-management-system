@@ -1,0 +1,44 @@
+/* src/pages/sections/AllStudents.css */
+
+.all-students-content {
+  background-color: #f7e0e0;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.all-students-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* ✅ FIXED: now 10 columns */
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+.all-students-row.header {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.all-students-cell {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  padding: 5px;
+  min-width: 80px;
+}
+
+
+.all-students-page-background {
+  width: 90%;
+  max-width: 1200px;
+  padding: 50px;
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+}

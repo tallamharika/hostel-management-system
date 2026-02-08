@@ -1,0 +1,31 @@
+/* src/pages/sections/LeavedEmployee.css */
+
+.leaved-employee-content {
+  background-color: #f7e0e0;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leaved-employee-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.leaved-employee-row.header {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.leaved-employee-cell {
+  word-wrap: break-word;
+  padding: 5px;
+}

@@ -1,0 +1,48 @@
+.features-page {
+  padding: 120px 40px 40px; /* extra top padding so it's not hidden behind navbar */
+  text-align: center;
+  color: #fff;
+  min-height: 100vh; /* make sure page covers full screen */
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40); /* optional dark gradient */
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fafafa;   /* base light color always visible */
+  color: #333;           /* dark text for readability */
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.4s ease; /* smooth transition for background, shadow, transform */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* elegant gradient on hover */
+  color: #222; /* slightly darker text for contrast */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* bigger shadow for “lift” effect */
+  transform: translateY(-6px) scale(1.02); /* subtle hover lift & zoom */
+}
+
+
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: orange;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}

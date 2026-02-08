@@ -1,0 +1,133 @@
+.feetracking-wrapper {
+  padding: 40px;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.feetracking-header h2 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.feetracking-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* SUMMARY */
+.feetracking-summary {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.summary-card button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #3751ff;
+  color: white;
+  cursor: pointer;
+}
+
+.summary-card button:hover {
+  background: #2437c6;
+}
+
+.paid p {
+  color: #1a9d54;
+}
+
+.pending p {
+  color: #e5533d;
+}
+
+/* TABLE */
+.feetracking-history table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+th {
+  background: #f1f3f9;
+  padding: 15px;
+}
+
+td {
+  padding: 14px;
+  text-align: center;
+}
+
+tr:hover {
+  background: #f9faff;
+}
+
+/* STATUS */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status.paid {
+  background: #e6f7ee;
+  color: #1a9d54;
+}
+
+.status.pending {
+  background: #fff0e9;
+  color: #e5533d;
+}
+
+/* BUTTONS */
+.pay-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background-color: #e68900;
+}
+
+.receipt-btn {
+  background: #3751ff;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.receipt-btn:hover {
+  background: #2437c6;
+}

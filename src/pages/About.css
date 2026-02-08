@@ -1,0 +1,115 @@
+.about-page {
+  padding: 120px 40px 40px;
+  color: #ffffffff;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1ab1d6ff, #d5d814ff);
+}
+
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.features-section {
+  margin-bottom: 60px;
+}
+
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item .icon {
+  font-size: 28px;
+  color: #de4aadff; /* green accent */
+  flex-shrink: 0;
+}
+
+.about-section {
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.15); /* base frosted background */
+  padding: 25px;
+  border-radius: 12px;
+  color: #6A0DAD; /* dark text on frosted card */
+  backdrop-filter: blur(8px); /* frosted effect */
+  transition: all 0.4s ease; /* smooth hover effect */
+}
+
+.about-section:hover {
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* elegant aqua → pink gradient */
+  color: #FF00FF; /* slightly darker text for contrast */
+  transform: translateY(-5px); /* subtle lift */
+  box-shadow: 0 8px 20px #6A0DAD; /* premium lift shadow */
+}
+
+.about-section h2 {
+  margin-bottom: 15px;
+  color: #4ade80; /* heading accent */
+  font-weight: 600;
+}
+
+.about-section p {
+  line-height: 1.7;
+  color: #1e1e2f; /* readable text */
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* === About Cards === */
+.about-card {
+  background: rgba(255, 255, 255, 0.1);   /* soft translucent base */
+  color: #fff;           /* readable text on dark background */
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.4s ease; /* smooth hover */
+  min-height: 220px;
+  backdrop-filter: blur(6px); /* subtle frosted effect */
+}
+
+.about-card:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* elegant purple → blue gradient */
+  color: #fff; /* text stays readable */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-6px) scale(1.02); /* subtle lift & zoom */
+}
+
+.about-card .icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #ffd700; /* gold accent for icons */
+}
+
+.about-card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: inherit; /* uses card text color */
+}

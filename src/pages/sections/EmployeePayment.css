@@ -1,0 +1,94 @@
+/* src/pages/sections/EmployeePayment.css */
+
+.employee-payment-content {
+  background-color: #f7e0e0;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  padding: 7px;
+  max-width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-payment-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.employee-payment-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.employee-payment-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.employee-payment-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.save-button,
+.clear-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.payment-history-table {
+  margin-top: 20px;
+  border-top: 2px solid #333;
+  padding-top: 10px;
+}
+
+.payment-history-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.payment-history-row.header {
+  font-weight: bold;
+}
+
+.payment-history-cell {
+  word-wrap: break-word;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}

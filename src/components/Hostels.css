@@ -1,0 +1,215 @@
+/* -------------------- */
+/* Wrapper for all hostel cards */
+.hostels-wrapper-vertical1 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 16px;
+  margin-top: -80px;
+  margin-left: -120px;
+  width: calc(100% - 150px);
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Individual hostel card */
+.hostel-card-vertical1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.hostel-card-vertical1:hover {
+  transform: translateY(-4px);
+}
+
+/* Hostel image */
+.hostel-image1 {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Hostel info */
+.hostel-info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  flex: 1;
+}
+
+.hostel-info1 h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.hostel-info1 p {
+  font-size: 16px;
+  margin: 3px 0;
+  color: #555;
+}
+
+/* Book button */
+.hostel-info1 button {
+  margin-top: 12px;
+  padding: 9px 18px;
+  font-size: 15px;
+  background-color: #3751ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hostel-info1 button:hover {
+  background-color: #273cba;
+}
+
+/* -------------------------- */
+/* Booking overlay */
+.booking-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Booking form card */
+.booking-form-card {
+  background: #fff;
+  border-radius: 14px;
+  width: 800px;          /* ✅ wider */
+  max-width: 96%;
+  padding: 20px 24px;    /* ✅ reduced padding */
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.booking-form-card h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+.booking-form-card p {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 14px;
+  color: #555;
+}
+
+/* Form grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 per row */
+  gap: 12px 25px;
+}
+
+/* Form fields */
+.form-field label {
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: #444;
+}
+.later-btn {
+  background-color: #ffb703;
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.later-btn:hover {
+  background-color: #f1a600;
+}
+
+/* Inputs */
+.booking-form input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9f9ff;
+}
+
+.booking-form input:focus {
+  outline: none;
+  border-color: #3751ff;
+}
+
+/* Price details */
+.price-details {
+  background: #f4f6ff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 12px;
+}
+
+.price-details p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Buttons */
+.form-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.confirm-btn {
+  background-color: #3751ff;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #273cba;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.cancel-btn:hover {
+  background-color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
